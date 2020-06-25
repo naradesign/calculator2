@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="a11y">계산기</h1>
+        <fieldset class="calc">
+            <output id="output" class="calc__output" data-value1="0" data-value2="0" data-operator data-lastkey>0</output>
+            <div class="calc__input">
+                <button class="calc__clear" aria-label="Clear">CLEAR</button>
+                <div class="calc__number">
+                    <button class="calc__numberItem">1</button>
+                    <button class="calc__numberItem">2</button>
+                    <button class="calc__numberItem">3</button>
+                    <button class="calc__numberItem">4</button>
+                    <button class="calc__numberItem">5</button>
+                    <button class="calc__numberItem">6</button>
+                    <button class="calc__numberItem">7</button>
+                    <button class="calc__numberItem">8</button>
+                    <button class="calc__numberItem">9</button>
+                    <button class="calc__numberItem calc__numberItem--0">0</button>
+                    <button class="calc__numberItem">.</button>
+                </div>
+                <div class="calc__operator">
+                    <button class="calc__operatorItem" aria-label="나누기">÷</button>
+                    <button class="calc__operatorItem" aria-label="곱하기">×</button>
+                    <button class="calc__operatorItem" aria-label="빼기">-</button>
+                    <button class="calc__operatorItem" aria-label="더하기">+</button>
+                    <button class="calc__operatorItem" aria-label="는">=</button>
+                </div>
+            </div>
+        </fieldset>
+    </main>
+    <script src="calculator.js"></script>
+</body>
+</html>
